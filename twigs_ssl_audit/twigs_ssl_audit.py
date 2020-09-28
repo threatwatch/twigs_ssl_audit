@@ -82,6 +82,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '2':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = '' 
@@ -93,6 +95,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = 'protocol: '+p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = '' 
@@ -104,6 +108,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = '' 
@@ -115,6 +121,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = '' 
@@ -129,6 +137,8 @@ def run_ssl_audit(args):
                     finding = finding + ' ' + p['cwe']
                 issue['details'] = finding
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = ''
@@ -140,6 +150,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = 'forward secrecy: '+p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = ''
@@ -151,6 +163,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = 'server preference: '+p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = ''
@@ -162,6 +176,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = 'server default: '+p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = ''
@@ -173,6 +189,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = 'header response: '+p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = ''
@@ -189,6 +207,8 @@ def run_ssl_audit(args):
                     finding = finding + ' ' + p['cwe']
                 issue['details'] = finding
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = ''
@@ -200,6 +220,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = 'cipher test: '+p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = ''
@@ -211,6 +233,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = 'browser simulation: '+p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = ''
@@ -222,6 +246,8 @@ def run_ssl_audit(args):
                 issue['twc_title'] = p['id']
                 issue['details'] = p['finding']
                 issue['rating'] = get_rating(p['severity']) 
+                if not args.info and issue['rating'] == '1':
+                    continue
                 issue['object_id'] = args.url 
                 issue['asset_id'] = args.assetid
                 issue['object_meta'] = ''

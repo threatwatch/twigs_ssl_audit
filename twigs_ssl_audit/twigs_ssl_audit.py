@@ -24,10 +24,10 @@ def get_rating(sev):
 
 def get_inventory(args):
     asset_id = args.assetid
-    if asset_id == None:
+    if asset_id == None or asset_id.strip() == "":
         asset_id = args.url
     asset_name = None
-    if args.assetname == None:
+    if args.assetname == None or args.assetname.strip() == "":
         asset_name = asset_id 
     else:
         asset_name = args.assetname
